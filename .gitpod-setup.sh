@@ -2,7 +2,7 @@
 mkdir -p ~/.ssh
 
 # Write the SSH private key from the Gitpod environment variable
-echo "SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
+echo "$SSH_PRIVATE_KEY" > ~/.ssh/id_ed25519
 chmod 600 ~/.ssh/id_ed25519
 
 # Generate the public key from the private key
